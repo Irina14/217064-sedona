@@ -69,10 +69,27 @@
   			</section>
       </article>
   		<section class="search">
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
   			<p><b>Заинтересовались?</b></p>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
   			<button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
-  			<!-- Здесь будет форма -->
+        <form action="#" method="post">
+          <label for="date-arrival">Дата заезда:</label>
+          <input type="text" name="date-arrival" id="date-arrival" value="24 апреля 2017">
+          <img src="#" width="21" height="22" alt="Календарь"><br>
+          <label for="date-exit">Дата выезда:</label>
+          <input type="text" name="date-exit" id="date-exit" value="4 июля 2017">
+          <img src="#" width="21" height="22" alt="Календарь"><br>
+          <label for="number-adults">Взрослые:</label>
+          <input type="text" name="number-adults" id="number-adults" value="2">
+          <img src="#" width="38" height="38" alt="Минус">
+          <img src="#" width="38" height="38" alt="Плюс">
+          <label for="number-children">Дети:</label>
+          <input type="text" name="number-children" id="number-children" value="0">
+          <img src="#" width="38" height="38" alt="Минус">
+          <img src="#" width="38" height="38" alt="Плюс"><br>
+          <button>Найти</button>
+        </form>
   		</section>
   		<section class="map">
   				<!-- Здесь будет интерактивная карта -->
