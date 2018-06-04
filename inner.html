@@ -23,32 +23,55 @@
       <section class="search-form">
         <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
         <form action="#" method="post">
-          <div class="search-form-infrastructure">
-            <h3 class="search-form-title">Инфраструктура:</h3>
+          <fieldset class="search-form-infrastructure">
+            <legend class="search-form-title">Инфраструктура:</legend>
             <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
             <input type="checkbox" name="parking" id="parking">
             <label for="parking">Парковка</label>
             <input type="checkbox" name="wi-fi" id="wi-fi">
             <label for="wi-fi">Wi-Fi</label>
-          </div>
-          <div class="search-form-housing">
-            <h3 class="search-form-title">Тип жилья:</h3>
+          </fieldset>
+          <fieldset class="search-form-housing">
+            <legend class="search-form-title">Тип жилья:</legend>
             <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="pool">Гостиница</label>
             <input type="checkbox" name="motel" id="motel" checked>
             <label for="motel">Мотель</label>
             <input type="checkbox" name="apartment" id="apartment" checked>
             <label for="apartment">Апартаменты</label>
-          </div>
-          <div class="search-form-cost">
-            <h3 class="search-form-title">Стоимость в сутки (Р):</h3>
-            <input type="text" name="cost-min" value="от 0">
-            <input type="text" name="cost-max" value="до 3000">
-            <input type="range" min="0" max="4000" step="1" value="3000"> 
-          </div>
+          </fieldset>
+          <fieldset class="search-form-cost">
+            <legend class="search-form-title">Стоимость в сутки (Р):</legend>
+            <label for="cost-min">От</label>
+            <input type="text" name="cost-min" id="cost-min" value="0">
+            <label for="cost-max">До</label>
+            <input type="text" name="cost-max" id="cost-max" value="3000">
+            <div class="price-bar">
+              <span class="price-control-min"></span>
+              <span class="price-control-max"></span>
+              <span class="price-scale"></span>
+              <span class="price-scale-active"></span>
+            </div>
+          </fieldset>
           <button type="submit">Показать</button>
         </form>
+      </section>
+      <section class="sorting-result">
+        <h2 class="visually-hidden">Сортировка результата поиска</h2>
+        <div class="result">
+          <p>Найдено: 3</p>
+        </div>
+        <div class="sorting">
+          <p>Сортировка:</p>
+          <button type="button">По цене</button>
+          <button type="button">По типу</button>
+          <button type="button">По рейтингу</button>
+        </div>
+        <div class="order">
+          <button type="button">По возрастанию</button>
+          <button type="button">По убыванию</button>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
