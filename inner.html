@@ -20,11 +20,11 @@
   	</header>
   	<main class="content">
       <h1 class="visually-hidden">Поиск гостиницы</h1>
-      <section class="search">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="search-form-infrastructure">
-            <legend class="search-form-title">Инфраструктура:</legend>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-form-infrastructure">
+            <legend class="filter-form-title">Инфраструктура:</legend>
             <input type="checkbox" name="pool" id="pool-field" checked>
             <label for="pool-field">Бассейн</label>
             <input type="checkbox" name="parking" id="parking-field">
@@ -32,8 +32,8 @@
             <input type="checkbox" name="wi-fi" id="wi-fi-field">
             <label for="wi-fi-field">Wi-Fi</label>
           </fieldset>
-          <fieldset class="search-form-housing">
-            <legend class="search-form-title">Тип жилья:</legend>
+          <fieldset class="filter-form-housing">
+            <legend class="filter-form-title">Тип жилья:</legend>
             <input type="checkbox" name="hotel" id="hotel-field" checked>
             <label for="hotel-field">Гостиница</label>
             <input type="checkbox" name="motel" id="motel-field" checked>
@@ -41,8 +41,8 @@
             <input type="checkbox" name="apartment" id="apartment-field" checked>
             <label for="apartment-field">Апартаменты</label>
           </fieldset>
-          <fieldset class="search-form-cost">
-            <legend class="search-form-title">Стоимость в сутки (Р):</legend>
+          <fieldset class="filter-form-cost">
+            <legend class="filter-form-title">Стоимость в сутки (Р):</legend>
             <label for="cost-min-field">От</label>
             <input type="text" name="cost-min" id="cost-min-field" placeholder="0">
             <label for="cost-max-field">До</label>
