@@ -156,11 +156,7 @@ a {
 	outline: none;
 }
 
-.search-form input::-webkit-input-placeholder {
-    color: #000000;
-}
-
-.search-form input::-moz-placeholder {
+.search-form input::placeholder {
     color: #000000;
 }
 
@@ -207,11 +203,7 @@ a {
 	background-color: transparent;
 }
 
-.filter-form-cost input::-webkit-input-placeholder {
-    color: #ffffff;
-}
-
-.filter-form-cost input::-moz-placeholder {
+.filter-form-cost input::placeholder {
     color: #ffffff;
 }
 
