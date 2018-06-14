@@ -15,7 +15,7 @@ a {
 
 .main-menu {
  	line-height: 26px;
- 	font-weight: bold;
+ 	font-weight: 700;
  	color: #000000;
  	background-color: #ffffff;
 }
@@ -37,11 +37,9 @@ a {
  	color: rgba(0, 0, 0, 0.3);
 }
 
-.current,
-.current:hover,
-.current:focus,
-.current:active {
+.current {
  	color: #766357;
+ 	pointer-events: none;
 }
 
 .welcome {
@@ -57,25 +55,27 @@ a {
  	  0 0; 
 }
 
+.advantages {
+	color: #333333;
+}
+
 .advantages h2 {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
+	color: #000000;
 	text-align: center;
-}
-
-.advantages p,
-.advantages span {
-	color: #333333;
 }
 
 .advantages > p {
 	line-height: 26px;
+	text-align: center;
 }
 
 .advantages-item h3 {
 	font-size: 21px;
-	font-weight: bold;
+	font-weight: 700;
+	color: #000000;
 }
 
 .advantages-list {
@@ -83,12 +83,11 @@ a {
 }
 
 .advantages-desc {
+	color: #ffffff;
 	background-color: #81b3d2;
 }
 
-.advantages-desc h3,
-.advantages-desc span,
-.advantages-desc p {
+.advantages-desc h3 {
 	color: #ffffff;
 }
 
@@ -99,7 +98,7 @@ a {
 .search b {
 	font-size: 30px;
 	line-height: 36px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .search-info {
@@ -115,7 +114,7 @@ a {
 	font: inherit;
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -136,7 +135,7 @@ a {
 
 .search-form label {
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .search-form input {
@@ -174,14 +173,170 @@ a {
 	background-repeat: no-repeat;
 }
 
+.filter {
+	background-color: #4d7ea9;
+	background-image: url("../img/background-filter.jpg");
+	background-repeat: no-repeat;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.filter label {
+	color: #ffffff;
+}
+
+.filter-button {
+	font: inherit;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.sorting-result {
+	background-color: #fefefe;
+}
+
+.result p {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.sorting {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting a {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+	color: #81b3d2;
+}
+
+.sorting a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.sorting .active {
+    color: #81b3d2;
+	border-bottom: none;
+}
+
+.catalog {
+	background-color: #fefefe;
+}
+
+.product {
+	margin-top: -13px;
+	box-shadow: 
+	  0 1px 0 0 #e5e5e5,
+	  0 -1px 0 0 #e5e5e5; 
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.product-title a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.product-title a:hover,
+.product-title a:focus {
+	color: #81b3d2;
+}
+
+.product-title a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.product-category,
+.product-price {
+	color: #333333;
+}
+
+.product-button {
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.product-button:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-info {
+	background-color: #81b3d2;
+}
+
+.button-info:hover,
+.button-info:focus {
+	background-color: #669ec0;
+} 
+
+.button-info:active {
+	background-color: #5496bd;
+}
+
+.button-book {
+	background-color: #766357;
+}
+
+.button-book:hover,
+.button-book:focus {
+	background-color: #604e43;
+}
+
+.button-book:active {
+	background-color: #503e33;
+}
+
+.product-rating-value {
+	width: 110px;
+	height: 27px;
+	line-height: 27px;
+	color: #666666;
+	text-align: center;
+	vertical-align: top;
+	background-color: #f2f2f2;
+}
+
 .main-footer {
 	background-color: #fdfdfd;
+}
+
+.inner-page {
+	background-color: #fefefe;
 }
 
 .footer-hashtag a {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #000000;
 }
 
@@ -198,16 +353,14 @@ a {
 	height: 41px;
 }
 
-.footer-logo path:hover,
-.footer-logo path:focus {
+.footer-logo:hover path,
+.footer-logo:focus path {
 	fill: #81b3d2;
 }
 
-.footer-logo path:active {
+.footer-logo:active path {
 	fill: #bdbbbc;
 }
-
-
 
  /*.visually-hidden {
   position: absolute;
