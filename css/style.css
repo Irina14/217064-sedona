@@ -13,10 +13,10 @@ a {
  	text-decoration: none;
 }
 
-img {
+/*.img {
 	max-width: 100%; 
 	height: auto;
-}
+}*/
 
 .container {
 	min-width: 768px;
@@ -312,20 +312,53 @@ img {
 }
 
 .filter {
+  padding: 27px 6.1% 30px 6.1%;
 	color: #ffffff;
 	background-color: #4d7ea9;
 	background-image: url("../img/background-filter.jpg");
 	background-repeat: no-repeat;
 }
 
+.filter-form {
+  display: flex;
+}
+
 .filter fieldset {
+  display: flex;
 	border: none;
 }
 
 .filter legend {
+  margin-bottom: 25px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
+}
+
+.filter-form-cost legend {
+  margin-bottom: 12px;
+}
+
+.filter-form-infrastructure label,
+.filter-form-housing label {
+  margin-bottom: 26px;
+}
+
+.filter-form-infrastructure label:last-child,
+.filter-form-housing label:last-child {
+  margin-bottom: 0;
+}
+
+.filter-form-infrastructure,
+.filter-form-housing {
+  width: 23.9%;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-form-cost {
+  margin-left: auto;
+  padding: 0;
 }
 
 .filter-form-cost input {
@@ -354,18 +387,33 @@ img {
 }
 
 .sorting-result {
+  display: flex;
+  align-items: baseline;
+  padding: 30px 6.1%;
 	background-color: #fefefe;
 }
 
+.result {
+  width: 15.6%; 
+}
+
 .result p {
+  margin: 0;
+  padding: 0;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 }
 
 .sorting {
+  display: flex;
 	font-size: 12px;
 	line-height: 18px;
+}
+
+.sorting p {
+  margin: 0;
+  padding: 0;
 }
 
 .sorting a {
