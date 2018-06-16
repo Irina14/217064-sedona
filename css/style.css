@@ -20,6 +20,7 @@ a {
 }
 
 .main-menu {
+	padding: 15px 6.1%;
  	line-height: 26px;
  	font-weight: 700;
  	color: #000000;
@@ -38,7 +39,6 @@ a {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	padding: 15px 6.1%;
  	list-style: none;
 }
 
@@ -76,7 +76,8 @@ a {
 .welcome {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 60px;
+	padding-top: 76px;
+	padding-bottom: 80px;
  	background-color: #a9c4d8;
  	background-image:
  	  url("../img/shape-1.png"), 
@@ -95,12 +96,10 @@ a {
 .welcome img {
 	width: 458px;
 	height: 352px;
-	padding-top: 76px;
-	padding-bottom: 80px;
 }
 
 .advantages {
-	margin-bottom: 49px;
+	padding-top: 60px;
 	color: #333333;
 }
 
@@ -133,7 +132,7 @@ a {
 	margin-bottom: 60px;
 }
 
-.advantages-item:first-of-type {
+.item-one {
 	margin-bottom: 81px;
 }
 
@@ -142,7 +141,6 @@ a {
 	margin: 0;
 	margin-bottom: 24px;
 	padding: 0;
-	padding-top: 47px;
 	font-size: 21px;
 	font-weight: 700;
 	color: #000000;
@@ -155,12 +153,12 @@ a {
 
 .advantages-item p {
 	margin: 0;
+	margin-top: 21px;
 	padding: 0;
-	padding-top: 21px;
 }
 
 .advantages-list-item p {
-	padding-top: 0;
+	margin-top: 0;
 }
 
 .advantages-image {
@@ -181,6 +179,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	width: 33.3%;
+	padding-top: 47px;
 	text-align: center;
 }
 
@@ -195,7 +194,12 @@ a {
 
 .advantages-blocks {
 	display: flex;
+	padding-bottom: 62px;
 	background-color: #eeeeee;
+}
+
+.search {
+	padding-top: 49px;
 }
 
 .search-info {
