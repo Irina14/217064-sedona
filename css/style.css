@@ -77,8 +77,6 @@ a {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 60px;
-	padding-top: 76px;
-	padding-bottom: 80px;
  	background-color: #a9c4d8;
  	background-image:
  	  url("../img/shape-1.png"), 
@@ -97,9 +95,12 @@ a {
 .welcome img {
 	width: 458px;
 	height: 352px;
+	padding-top: 76px;
+	padding-bottom: 80px;
 }
 
 .advantages {
+	margin-bottom: 49px;
 	color: #333333;
 }
 
@@ -124,16 +125,42 @@ a {
 
 .advantages-item-wrapper {
 	display: flex;
+	height: 256px;
+	overflow: hidden;
+}
+
+.wrapper-one {
+	margin-bottom: 60px;
+}
+
+.advantages-item:first-of-type {
+	margin-bottom: 81px;
 }
 
 .advantages-item h3 {
+	width: 160px;
+	margin: 0;
+	margin-bottom: 24px;
+	padding: 0;
+	padding-top: 47px;
 	font-size: 21px;
 	font-weight: 700;
 	color: #000000;
 }
 
 .advantages-item img {
+	align-self: center;
 	width: 66.7%;
+}
+
+.advantages-item p {
+	margin: 0;
+	padding: 0;
+	padding-top: 21px;
+}
+
+.advantages-list-item p {
+	padding-top: 0;
 }
 
 .advantages-image {
@@ -171,19 +198,28 @@ a {
 	background-color: #eeeeee;
 }
 
-.search b {
-	font-size: 30px;
-	line-height: 36px;
-	font-weight: 700;
-}
-
 .search-info {
 	line-height: 24px;
 	color: #333333;
 }
 
 .search p {
+	margin: 0;
+	padding: 0;
 	text-align: center;
+}
+
+.search p:first-of-type {
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.search p:last-of-type {
+	width: 445px;
+	margin: 0 auto;
+	margin-bottom: 45px;
 }
 
 .button {
@@ -439,6 +475,8 @@ a {
 .footer-copyright {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	padding: 33px 0;
 	width: 33.3%;
 }
 
