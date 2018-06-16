@@ -29,18 +29,16 @@ a {
 .main-header-logo {
 	position: absolute;
 	top: 0;
-	left: 50%;
+	left: calc(50% - 69px);
 	width: 138px;
 	height: 70px;
-	margin-left: -69px;
 }
 
 .main-menu-list {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	padding-left: 6.1%;
-	padding-right: 6.1%;
+	padding: 15px 6.1%;
  	list-style: none;
 }
 
@@ -78,6 +76,9 @@ a {
 .welcome {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 60px;
+	padding-top: 76px;
+	padding-bottom: 80px;
  	background-color: #a9c4d8;
  	background-image:
  	  url("../img/shape-1.png"), 
@@ -87,9 +88,9 @@ a {
  	  no-repeat;
  	background-position:
  	  0 100%,
- 	  0 0; 
+ 	  0 -55px; 
  	background-size: 
- 	  100%,
+ 	  100% 57px,
  	  100%;
 }
 
@@ -103,6 +104,11 @@ a {
 }
 
 .advantages h2 {
+	width: 465px;
+	margin: 0;
+	margin: 0 auto;
+	margin-bottom: 27px;
+	padding: 0;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -111,6 +117,7 @@ a {
 }
 
 .advantages > p {
+	margin-bottom: 51px;
 	line-height: 26px;
 	text-align: center;
 }
