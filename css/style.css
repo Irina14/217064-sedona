@@ -407,12 +407,15 @@ a {
 
 .sorting {
   display: flex;
+  justify-content: space-between;
+  width: 355px;
 	font-size: 12px;
 	line-height: 18px;
 }
 
 .sorting p {
   margin: 0;
+  margin-right: 3px;
   padding: 0;
 }
 
@@ -434,6 +437,10 @@ a {
 .sorting .active {
     color: #81b3d2;
 	border-bottom: none;
+}
+
+.order {
+  margin-left: auto;
 }
 
 .catalog {
