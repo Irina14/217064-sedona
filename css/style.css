@@ -32,6 +32,7 @@ img {
 }
 
 .main-menu {
+  position: relative;
 	padding: 15px 6.1%;
  	line-height: 26px;
  	font-weight: 700;
@@ -99,10 +100,10 @@ img {
  	  no-repeat;
  	background-position:
  	  0 100%,
- 	  0 -55px; 
+ 	  center top -55px; 
  	background-size: 
  	  100% 57px,
- 	  100%;
+ 	  auto;
 }
 
 .welcome img {
@@ -119,7 +120,7 @@ img {
 	width: 465px;
 	margin: 0;
 	margin: 0 auto;
-	margin-bottom: 27px;
+	margin-bottom: 28px;
 	padding: 0;
 	font-size: 21px;
 	line-height: 26px;
@@ -129,7 +130,7 @@ img {
 }
 
 .advantages > p {
-	margin-bottom: 51px;
+	margin-bottom: 52px;
 	line-height: 26px;
 	text-align: center;
 }
@@ -146,7 +147,7 @@ img {
   display: flex;
   align-items: center;
   width: 66.7%;
-  height: 257px;
+  height: 256px;
 }
 
 .image-two {
@@ -154,7 +155,7 @@ img {
 }
 
 .advantages-item h3 {
-	width: 160px;
+	width: 151px;
   margin: 0 auto 24px auto;
 	padding: 0;
 	font-size: 21px;
@@ -176,7 +177,8 @@ img {
 }
 
 .advantages-list-item {
-  padding: 160px 4.7% 81px 4.7%;
+  min-height: 330px;
+  padding: 160px 4.7% 65px 4.7%;
 }
 
 .advantages-list-item p {
@@ -184,7 +186,7 @@ img {
 }
 
 .advantages-desc {
-	padding: 47px 4% 60px 4%;
+	padding: 47px 4% 40px 4%;
 }
 
 .advantages-desc h3 {
@@ -192,7 +194,8 @@ img {
 }
 
 .advantages-blocks .advantages-item {
-	padding: 47px 5% 60px 5%;
+  min-height: 256px;
+	padding: 47px 5% 40px 5%;
 }
 
 .advantages-list-item,
@@ -242,6 +245,10 @@ img {
 	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+.search {
+  position: relative;
 }
 
 .search-button {
