@@ -88,26 +88,27 @@
   		<section class="search">
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
   			<p><b>Заинтересовались?</b></p>
-  			<p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+  			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
   			<button class="search-button button" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="search-item">
+          <div class="search-item-arrival">
             <label for="date-arrival-field">Дата заезда:</label>
             <input type="text" name="date-arrival" id="date-arrival-field" placeholder="24 апреля 2017">
-            <button class="icon-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
+            <span class="visually-hidden">Календарь</span>
+            
           </div>
-          <div class="search-item">
+          <div class="search-item-exit">
             <label for="date-exit-field">Дата выезда:</label>
             <input type="text" name="date-exit" id="date-exit-field" placeholder="4 июля 2017">
-            <button class="icon-calendar" type="button"><span class="visually-hidden">Календарь</span></button>
+            <span class="visually-hidden"><button class="icon-calendar" type="button">Календарь</button></span>
           </div>
-          <div class="search-item">
+          <div class="search-item-adults">
             <label for="number-adults-field">Взрослые:</label>
             <input type="text" name="number-adults" id="number-adults-field" placeholder="2">
             <button class="icon-minus" type="button"><span class="visually-hidden">Минус</span></button>
             <button class="icon-plus" type="button"><span class="visually-hidden">Плюс</span></button>
           </div>
-          <div class="search-item">
+          <div class="search-item-children">
             <label for="number-children-field">Дети:</label>
             <input type="text" name="number-children" id="number-children-field" placeholder="0">
             <button class="icon-minus" type="button"><span class="visually-hidden">Минус</span></button>
