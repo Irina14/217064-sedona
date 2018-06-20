@@ -224,7 +224,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .advantages-list-item:nth-child(3)::before {
-  top: 58px;
+  top: 56px;
   margin-left: -32px;
   background-image: url("../img/icon-3.svg");
 }
@@ -240,6 +240,10 @@ input[type="checkbox"].visually-hidden {
 .advantages-blocks .advantages-item {
   min-height: 256px;
 	padding: 47px 5% 40px 5%;
+}
+
+.advantages-blocks .advantages-item:nth-child(3) {
+  padding: 47px 6% 40px 6%;
 }
 
 .advantages-list-item,
@@ -352,6 +356,10 @@ input[type="checkbox"].visually-hidden {
   border: none;
 }
 
+.search-item-wrapper input {
+  margin-bottom: 0;
+}
+
 .date-arrival input,
 .date-exit input {
   width: 346px;
@@ -378,6 +386,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .form-button {
+  width: 458px;
+  height: 58px;
 	background-color: #81b3d2;
 }
 
@@ -428,6 +438,7 @@ input[type="checkbox"].visually-hidden {
 .search-item-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 54px;
 }
 
 .search-item-wrapper button {
@@ -437,13 +448,13 @@ input[type="checkbox"].visually-hidden {
 
 .icon-minus {
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   right: 67px;
 }
 
 .icon-plus {
   position: absolute;
-  bottom: 29px;
+  bottom: 0;
   right: -8px;
 }
 
@@ -477,7 +488,10 @@ input[type="checkbox"].visually-hidden {
 }
 
 .map {
-	height: 473px;
+  height: 473px; 
+}
+
+.map-footer-wrapper {
 	background-color: #f2f1ef;
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
@@ -743,7 +757,10 @@ input[type="checkbox"].visually-hidden {
 
 .main-footer {
   display: flex;
-	background-color: #fdfdfd;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 36px 6.1%;
+	background-color: rgba(249, 251, 246, 0.9);
 }
 
 .inner-page {
@@ -753,11 +770,16 @@ input[type="checkbox"].visually-hidden {
 .footer-hashtag,
 .footer-social,
 .footer-copyright {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 33px 0;
-	width: 33.3%;
+  width: 24%;	
+}
+
+.footer-hashtag,
+.footer-social ul,
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-hashtag a {
@@ -771,6 +793,52 @@ input[type="checkbox"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: #81b3d2; 
+}
+
+.social-button::before {
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.button-twitter::before {
+  width: 17px;
+  height: 15px;
+  background-image: url("../img/twitter.svg");
+}
+  
+.button-facebook::before {
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/fb-icon.svg");
+}
+
+.button-youtube::before {
+  width: 20px;
+  height: 16px;
+  background-image: url("../img/youtube.svg");
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active::before {
+  opacity: 0.3;
 }
 
 .footer-copyright p {
