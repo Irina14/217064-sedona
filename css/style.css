@@ -636,14 +636,8 @@ img {
 }
 
 .price-bar button:hover::before,
-.price-bar button:hover::focus {
+.price-bar button:focus::before {
   transform: scale(1.1);
-}
-
-.btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
 }
 
 .filter-button {
@@ -714,12 +708,59 @@ img {
 }
 
 .sorting .active {
-    color: #81b3d2;
+  color: #81b3d2;
 	border-bottom: none;
 }
 
 .order {
+  position: relative;
+  width: 34px;
   margin-left: auto;
+}
+
+.order-icon-up::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  border: 10px solid #cacaca; 
+  border-top-width: 0;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.order-icon-down::before {
+  content: "";
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border: 10px solid #cacaca; 
+  border-bottom-width: 0;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.order-icon-up:hover::before,
+.order-icon-up:focus::before {
+  border-bottom-color: #231f20;
+}
+
+.order-icon-down:hover::before,
+.order-icon-down:focus::before {
+  border-top-color: #231f20;
+}
+
+.order-icon-up:active::before,
+.order-icon-up.active::before {
+  border-bottom-color: #81b3d2;
+}
+
+.order-icon-down:active::before,
+.order-icon-down.active::before {
+  border-top-color: #81b3d2;
 }
 
 .catalog {
