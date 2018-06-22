@@ -718,48 +718,42 @@ img {
   margin-left: auto;
 }
 
-.order-icon-up::before {
+.order-icon::before {
   content: "";
-  bottom: 0;
   position: absolute;
-  border: 10px solid #cacaca; 
-  border-top-width: 0;
+  bottom: 0;
+  border: 10px solid #cacaca; ;
   border-left-width: 5px;
   border-right-width: 5px;
-  border-left-color: transparent;
-  border-right-color: transparent;
+  border-color: #cacaca transparent;
 }
 
-.order-icon-down::before {
-  content: "";
+.icon-up::before {
+   border-top-width: 0;
+}
+
+.icon-down::before {
   right: 0;
-  bottom: 0;
-  position: absolute;
-  border: 10px solid #cacaca; 
   border-bottom-width: 0;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-left-color: transparent;
-  border-right-color: transparent;
 }
 
-.order-icon-up:hover::before,
-.order-icon-up:focus::before {
+.icon-up:hover::before,
+.icon-up:focus::before {
   border-bottom-color: #231f20;
 }
 
-.order-icon-down:hover::before,
-.order-icon-down:focus::before {
+.icon-down:hover::before,
+.icon-down:focus::before {
   border-top-color: #231f20;
 }
 
-.order-icon-up:active::before,
-.order-icon-up.active::before {
+.icon-up:active::before,
+.icon-up.active::before {
   border-bottom-color: #81b3d2;
 }
 
-.order-icon-down:active::before,
-.order-icon-down.active::before {
+.icon-down:active::before,
+.icon-down.active::before {
   border-top-color: #81b3d2;
 }
 
@@ -785,12 +779,12 @@ img {
 
 .product-title {
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
 }
 
 .product-title a {
 	font-size: 21px;
-	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 }
@@ -836,15 +830,25 @@ img {
 .product-preview {
   display: flex;
   flex-direction: column;
+}
+
+.product-rating,
+.product-preview {
   justify-content: space-between;
 }
 
-.product-category,
-.product-price {
-	color: #333333;
+.product-wrapper {
+  display: flex;
+  margin-bottom: 17px;
+  color: #333333;
+}
+
+.product-category {
+  width: 116px;
 }
 
 .product-button {
+  padding: 5px 17px;
 	font-weight: 700;
 	color: #ffffff;
 }
@@ -854,6 +858,7 @@ img {
 }
 
 .button-info {
+  margin-right: 3px;
 	background-color: #81b3d2;
 }
 
