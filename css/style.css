@@ -313,7 +313,7 @@ img {
 	position: absolute;
   left: calc(50% - 284px);
 	width: 568px;
-	height: 395px;
+	min-height: 395px;
   padding: 55px;
 	background-color: #ffffff;
 }
@@ -549,7 +549,6 @@ img {
 
 .filter-form-cost input {
   width: 35px;
-  padding-left: 4px;
 	font: inherit;
 	color: #ffffff;
 	background-color: transparent;
@@ -571,21 +570,19 @@ img {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
-
+ 
 .cost-wrapper label {
-  display: flex;
-  justify-content: center;
   width: 50%;
   cursor: pointer;
 }
 
-/*.cost-wrapper label:first-child {
+.cost-wrapper label:first-child {
   padding-left: 20.5%;
-}*/
+}
 
-/*.cost-wrapper label:last-child {
+.cost-wrapper label:last-child {
   padding-left: 17.5%;
-}*/
+}
 
 .cost-wrapper::after {
   content: "";
