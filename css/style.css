@@ -495,6 +495,7 @@ img {
 }
 
 .filter fieldset {
+  margin-right: 0;
 	border: none;
 }
 
@@ -506,6 +507,8 @@ img {
 }
 
 .filter-form-cost legend {
+  width: 97%;
+  margin-left: auto;
   margin-bottom: 12px;
 }
 
@@ -539,7 +542,7 @@ img {
 }
 
 .filter-form-cost {
-  width: 30%;
+  width: 31%;
   margin-left: auto;
   padding: 0;
 }
@@ -560,7 +563,9 @@ img {
   position: relative;
   display: flex;
   align-items: center;
+  width: 97%;
   height: 36px;
+  margin-left: auto;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -572,11 +577,11 @@ img {
 }
 
 .cost-wrapper label:first-child {
-  padding-left: 21%;
+  padding-left: 20.5%;
 }
 
 .cost-wrapper label:last-child {
-  padding-left: 18%;
+  padding-left: 17.5%;
 }
 
 .cost-wrapper::after {
@@ -592,6 +597,8 @@ img {
 
 .price-bar {
   position: relative;
+  width: 97%;
+  margin-left: auto;
   margin-bottom: 32px;
 }
 
@@ -898,7 +905,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 36px 6.1%;
+  padding: 36px 0;
 	background-color: rgba(249, 251, 246, 0.9);
 }
 
@@ -909,7 +916,7 @@ img {
 .footer-hashtag,
 .footer-social,
 .footer-copyright {
-  width: 24%;	
+  width: 33.3%;	
 }
 
 .footer-hashtag,
