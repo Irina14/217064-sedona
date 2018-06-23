@@ -515,7 +515,7 @@ img {
 
 .filter-wrapper {
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .filter-wrapper:last-child {
@@ -532,6 +532,7 @@ img {
 .filter-form-infrastructure label,
 .filter-form-housing label {
   padding-left: 40px;
+  cursor: pointer;
 }
 
 .filter-wrapper input[type="checkbox"] + label::before {
@@ -620,7 +621,7 @@ img {
   position: relative;
   width: 97%;
   margin-left: auto;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .price-scale {
