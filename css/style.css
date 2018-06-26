@@ -321,6 +321,8 @@ img {
 }
 
 .search-button {
+  position: relative;
+  z-index: 10;
   width: 568px;
   height: 86px;
   background-color: #766357;
@@ -346,8 +348,31 @@ img {
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .search-form {
   position: absolute;
+  z-index: 1;
   left: calc(50% - 284px);
   display: none;
   width: 568px;
@@ -358,6 +383,10 @@ img {
 .search-form-open {
   display: block;
   animation: bounce 0.6s;
+}
+
+.search-form-error {
+  animation: shake 0.6s;
 }
 
 .search-form label {

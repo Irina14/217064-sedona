@@ -6,11 +6,12 @@ var adults = form.querySelector('[name=number-adults]');
 var children = form.querySelector('[name=number-children]');
 
 var isStorageSupport = true;
-var storage = '';
+var storage_adults = '';
+var storage_children = '';
 
   try {
-    storage = localStorage.getItem('adults');
-    storage = localStorage.getItem('children');
+    storage_adults = localStorage.getItem('adults');
+    storage_children = localStorage.getItem('children');
   } catch (err) {
     isStorageSupport = false;
   }
@@ -18,11 +19,19 @@ var storage = '';
 search.addEventListener('click', function (evt) {
   evt.preventDefault();
   form.classList.toggle('search-form-open');
+
+  if (storage_adults || storage_children) {
+    adults.value = storage_adults;
+    children.value = storage_children;
+  }
 });
 
 form.addEventListener('submit', function(evt) {
   if (!arrival.value || !exit.value || !adults.value || !children.value) {
     evt.preventDefault();
+    form.classList.remove('search-form-error');
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add('search-form-error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('adults', adults.value);
