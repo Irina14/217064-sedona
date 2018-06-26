@@ -90,6 +90,7 @@ img {
 }
 
 .main-menu-item {
+  display: block;
   color: #000000;
 }
 
@@ -335,12 +336,28 @@ img {
   background-color: #503e33;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-86px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .search-form {
   position: absolute;
   left: calc(50% - 284px);
+  display: none;
   width: 568px;
   padding: 55px 54px;
   background-color: #ffffff;
+}
+
+.search-form-open {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .search-form label {
@@ -575,7 +592,7 @@ img {
 
 .filter-wrapper {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .filter-wrapper:last-child {
@@ -709,7 +726,7 @@ img {
   position: relative;
   width: 97%;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .price-scale {
