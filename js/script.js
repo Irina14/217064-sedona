@@ -5,6 +5,8 @@ var exit = form.querySelector('[name=date-exit]');
 var adults = form.querySelector('[name=number-adults]');
 var children = form.querySelector('[name=number-children]');
 
+form.classList.remove('search-form-open');
+
 var isStorageSupport = true;
 var storage_adults = '';
 var storage_children = '';
@@ -19,6 +21,7 @@ var storage_children = '';
 search.addEventListener('click', function (evt) {
   evt.preventDefault();
   form.classList.toggle('search-form-open');
+  form.classList.remove('search-form-error');
 
   if (storage_adults || storage_children) {
     adults.value = storage_adults;
