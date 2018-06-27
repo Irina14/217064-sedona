@@ -588,6 +588,8 @@ img {
 .map iframe {
   position: relative;
   z-index: 1;
+  width: 100%;
+  border: none;
 }
 
 .filter {
