@@ -90,7 +90,8 @@ img {
 }
 
 .main-menu-item {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   color: #000000;
 }
 
@@ -598,6 +599,7 @@ img {
   background-color: #4d7ea9;
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
+  background-position: 0 -50px;
 }
 
 .filter-form {
@@ -673,6 +675,7 @@ img {
 }
 
 .filter-wrapper input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }  
 
