@@ -1119,7 +1119,7 @@ img {
      -ms-flex-pack: justify;
    justify-content: space-between;
   width: 100%;
-  padding: 36px 0;
+  padding: 30px 0;
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -1175,6 +1175,7 @@ img {
 }
 
 .footer-social li {
+  margin-top: 6px;
   margin-bottom: 6px;
 }
 
@@ -1238,6 +1239,10 @@ img {
   margin-right: 8px;
   padding: 0;
   line-height: 26px;
+}
+
+.footer-copyright svg {
+  display: block;
 }
 
 .footer-logo:hover path,
