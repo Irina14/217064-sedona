@@ -111,6 +111,7 @@ img {
 }
 
 .content-inner {
+  display: block;
   padding-bottom: 120px;
 }
 
