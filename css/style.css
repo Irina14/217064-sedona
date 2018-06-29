@@ -1136,6 +1136,7 @@ img {
 }
 
 .footer-hashtag,
+.footer-social,
 .footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1150,25 +1151,14 @@ img {
         align-items: center;
 }
 
-.footer-hashtag a {
+.footer-hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
-.footer-social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-     -ms-flex-pack: center;
-   justify-content: center;
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
+.footer-social {
   margin: 0;
   padding: 0;
   list-style: none;
