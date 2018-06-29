@@ -1224,15 +1224,17 @@ img {
   opacity: 0.3;
 }
 
-.footer-copyright p {
+.footer-copyright {
   margin: 0;
-  margin-right: 8px;
   padding: 0;
-  line-height: 26px;
 }
 
 .footer-copyright svg {
   display: block;
+}
+
+.footer-logo {
+  margin-left: 8px;
 }
 
 .footer-logo:hover path,
